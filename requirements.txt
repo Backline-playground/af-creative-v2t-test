@@ -1,4 +1,4 @@
---extra-index-url https://packages.af-eng.io/artifactory/api/pypi/pypi/simple
+--extra-index-url https://trial4hetdf.jfrog.io/artifactory/api/pypi/af-v2t/simple
 numpy==2.2.6
 pandas==2.2.3
 tqdm
