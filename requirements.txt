@@ -1,4 +1,4 @@
---extra-index-url https://packages.af-eng.io/artifactory/api/pypi/pypi/simple
+--extra-index-url https://trial4hetdf.jfrog.io/artifactory/api/pypi/af-v2t/simple
 numpy==2.2.6
 pandas==2.2.3
 tqdm
@@ -21,3 +21,4 @@ werkzeug==3.0.1
 requests==2.31.0
 certifi==2024.2.2
 idna==3.6
+af-internal-utils==1.0.0

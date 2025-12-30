@@ -14,6 +14,7 @@ import requests
 from jinja2 import Template
 from sqlalchemy import create_engine
 import typer
+from af_internal_utils import get_config, format_output
 
 app = Flask(__name__)
 cli = typer.Typer()
@@ -22,7 +23,8 @@ cli = typer.Typer()
 @app.route("/")
 def index():
     """Health check endpoint."""
-    return jsonify({"status": "ok", "message": "Test application running"})
+    config = get_config()
+    return jsonify({"status": "ok", "message": "Test application running", "config": config})
 
 
 @app.route("/data")
@@ -66,6 +68,13 @@ def load_config(config_path: str = "config.yaml"):
             print(f"Loaded config: {config}")
     else:
         print(f"Config file not found: {config_path}")
+
+
+@cli.command()
+def show_info():
+    """Display application info using internal utils."""
+    config = get_config()
+    print(format_output(config))
 
 
 if __name__ == "__main__":
