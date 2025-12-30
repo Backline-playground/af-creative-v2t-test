@@ -1,0 +1,23 @@
+--extra-index-url https://packages.af-eng.io/artifactory/api/pypi/pypi/simple
+numpy==2.2.6
+pandas==2.2.3
+tqdm
+google-cloud-aiplatform==1.93.0
+openai>=1.79.0
+boto3>=1.38.18
+pyperclip
+flask==2.3.0
+python-dotenv
+typer==0.15.4
+psycopg2-binary>=2.9.10
+SQLAlchemy>=2.0.38
+pyyaml==6.0.1
+Pillow==10.2.0
+google-genai==1.19.0
+google-api-core==2.19.0
+google-auth==2.29.0
+jinja2==3.1.3
+werkzeug==3.0.1
+requests==2.31.0
+certifi==2024.2.2
+idna==3.6
